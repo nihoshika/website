@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>■Cube</title>
+    <link rel="icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build_3d_cube/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build_3d_cube/3d_cube_output.json", {onProgress: UnityProgress});
+    </script>
+</head>
+
+<body>
+    <div class="webgl-content">
+    <div id="gameContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+            <p class="white-text">[移動] WASDキー　[ゲーム開始,ジャンプ] Spaceキー　[Cubeの発射] 右クリック　[一時停止] Escキー</p>
+        </div>
+    </div>
+</body>
+
+</html>
